@@ -62,8 +62,8 @@
     "generalTV": {
         "price":    "price",
         "currency": "currency",
-        "unit":     "es-unit",
+        "unit":     "unit",
         "step":     "step",
-        "title":    "pagetitle_[(__lang)]"
+        "title":    "pagetitle"
     }
 }
