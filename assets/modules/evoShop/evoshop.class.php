@@ -273,7 +273,7 @@ class evoShop
 			return str_replace(['[%', '%]'], ['',''], $parseStr);
 		}
 
-		public function callEvent(String $name, $data=array()) {
+		public function callEvent($name, $data=array()) {
 			$evtOut = $this->modx->invokeEvent($name, ['data'=>$data, 'es'=>$this]);
 			if (is_array($evtOut) && count($evtOut) > 0){
 	            $tmp = array_pop($evtOut);
