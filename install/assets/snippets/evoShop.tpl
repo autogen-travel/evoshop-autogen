@@ -21,7 +21,7 @@ $settings = $evoShop->getConfig();
 $settings['update'] = $_SESSION[$evoShop->cart->sessionKey] ? false : true;
 
 $settings_json = json_encode($settings, JSON_UNESCAPED_UNICODE);
-$modx->regClientScript('<script type="text/javascript">var evoShopConfig = '.$settings_json.';</script><script src="/evoShop/js/evoShop.js?v=1.25"></script>');
+$modx->regClientScript('<script type="text/javascript">var evoShopConfig = '.$settings_json.';</script><script src="/assets/modules/evoShop/js/evoShop.js?v=1.25"></script>');
 
 
 $cart_arr = $evoShop->cart->render();
