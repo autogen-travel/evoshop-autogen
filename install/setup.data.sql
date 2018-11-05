@@ -1,3 +1,15 @@
+DROP TABLE IF EXISTS `{PREFIX}evoshop_carts`;
+CREATE TABLE `{PREFIX}evoshop_carts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `hash` varchar(255) NOT NULL,
+  `userid` int(11) DEFAULT NULL,
+  `cart` text NOT NULL,
+  `ip` varchar(255) NOT NULL,
+  `last_change_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 --
 -- Дамп данных таблицы `{PREFIX}categories`
 --
